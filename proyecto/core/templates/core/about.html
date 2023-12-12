@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Roberth Diaz{% endblock %} 
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">   
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar2.jpg' %}" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Roberth Diaz</h2>   
+        <p class="text-justify">Profesional en el mundo IT con más de 10 años de experiencia, dedicado a la supervisión y gestión de equipos, actualmente desempeñando roles de conduccion en el dinámico NOC B2B de Telecom Argentina. Mi enfoque se centra en la agilidad empresarial, implementando exitosamente metodologías ágiles para optimizar procesos y garantizar respuestas rápidas a desafíos operativos. Mi compromiso con la eficiencia y habilidades analíticas han contribuido al éxito del sector y la organización.</p><br>
+        <p class="text-justify"> Por fuera del trabajo, descubrí a través de Python lo mucho que me gusta, también, el mundo del desarrollo -Portfolio en construcción-, siempre receptivo a nuevos aprendizajes que me den oportunidad de innovar y crecer profesionalmente</p>
+      </div>
+    </div>  
+  </div>
+{% endblock %}

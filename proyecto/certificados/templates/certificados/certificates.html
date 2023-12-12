@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Certificaciones - Roberth Diaz{% endblock %} 
+
+{% block background %}{% load static %}{% static 'core/img/certificate-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Certificaciones</h1>
+<span class="subheading">Profesionales</span>
+{% endblock %}
+
+{% block content %}
+    {% for certificado in certificado %}
+<div class="container">
+   
+    <!-- Proyecto -->
+    <div class="row project">  	
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{{certificado.image}}" alt="">
+        </div>
+      <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">{{certificado.titulo}}</h2>   
+        <p>{{certificado.habilidades}}</p>
+        <p><a href="{{certificado.image}}" data-toggle="lightbox" data-gallery="galeria">Certificado</a></p>
+        </div>
+    </div>
+    </div>
+{% endfor %}    
+{% endblock %}
+
+
